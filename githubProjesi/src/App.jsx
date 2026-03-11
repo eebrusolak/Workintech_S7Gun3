@@ -8,24 +8,23 @@ import { Switch, Route } from "react-router-dom";
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <>
-
+ return (
     <Switch>
-        <Route exact path="/login">
-        <Login/>
 
-        </Route>
-        
-        <Route exact path="/success">
-        <Login/>
+      <Route exact path="/">
+        <Login />
+      </Route>
 
-        </Route>
+      <Route exact path="/login">
+        <Login />
+      </Route>
+
+      <Route exact path="/success">
+        <h1>BAŞARILI</h1>
+      </Route>
+
     </Switch>
-
-    
-    </>
-  )
+ );
 }
 
 export default App
